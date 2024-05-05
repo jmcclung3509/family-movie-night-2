@@ -1,0 +1,103 @@
+body {
+  font-family: "Quicksand", sans-serif;
+}
+body .hidden {
+  display: none;
+}
+body .show {
+  display: unset;
+}
+body .overlay {
+  background-color: rgba(245, 245, 249, 0.894);
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  min-height: 100%;
+}
+body .overlay .container {
+  margin-top: 50px;
+}
+body .overlay .container h1 {
+  text-align: center;
+  font-family: "Limelight", cursive;
+  margin-bottom: 40px;
+}
+body .overlay .container .row-1 {
+  margin-bottom: 50px;
+}
+body .overlay .container .row-1 .name,
+body .overlay .container .row-1 .movie-selection {
+  width: 100%;
+  padding: 10px;
+  border: none;
+  outline: none;
+  font-family: "Quicksand", sans-serif;
+}
+body .overlay .container .row-1 .form-select {
+  color: -internal-light-dark(black, white);
+  font-family: "Quicksand", sans-serif;
+  padding: 10px 36px 10px 10px;
+  outline: none;
+  border: none;
+}
+body .overlay .container .row-1 label {
+  font-family: "Quicksand", sans-serif;
+}
+body .overlay .container .row-1 .btn-info {
+  font-size: 1.2rem;
+}
+body .overlay .container .row-2 h3 {
+  text-align: center;
+  font-weight: bold;
+  font-size: 1.2rem;
+  margin-bottom: 40px;
+}
+body .overlay .container .list-container {
+  padding-left: 0;
+}
+body .overlay .container .list-container li {
+  text-align: center;
+}
+body .overlay .container .btn-container {
+  width: 100%;
+  margin-bottom: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+body .overlay .container .btn-container .suggestions {
+  width: -moz-fit-content;
+  width: fit-content;
+}
+body .overlay .container .movie-container {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  flex-flow: row wrap;
+}
+body .overlay .container .movie-container .newMovie {
+  width: 48%;
+  padding-bottom: 30px;
+}
+body .overlay .container .movie-container .newMovie .imgDiv {
+  display: flex;
+  justify-content: center;
+}
+body .overlay .container .movie-container .newMovie .imgDiv img {
+  width: 50%;
+  margin: 0 auto;
+}
+body .overlay .container .movie-container .newMovie h3 {
+  text-align: center;
+}
+body .overlay .container .movie-container .newMovie .releaseDate {
+  text-align: center;
+  margin-bottom: 0 !important;
+}
+body .overlay .container .movie-container .newMovie .kid-tag {
+  text-align: center;
+  color: #3eb489;
+}/*# sourceMappingURL=styles.css.map */
