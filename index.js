@@ -9,7 +9,7 @@ const getMoviesBtn = document.querySelector(".suggestions");
 const familyFriendlyCheckbox = document.querySelector(".family-friendly"); 
 const titleBar = document.querySelector(".row-2")
 
-const api_key="6af57a5cf47289dd6788043a2cc7d90d";
+
 const api_url = "https://api.themoviedb.org/3/discover/movie?include_adult=false&include_video=false&language=en-US&page=1&sort_by=popularity.desc&with_genres=28|18|16|12|14|35|10751&total_results=100";
 const kid_url = "https://api.themoviedb.org/3/discover/movie?language=en-US&sort_by=popularity.desc&include_adult=false&include_video=false&page=1&with_genres=10751";
 
@@ -197,7 +197,7 @@ const getMovies =()=>{
     method: 'GET',
     headers: {
       accept: 'application/json',
-      Authorization: 'Bearer eyJhbGciOiJIUzI1NiJ9.eyJhdWQiOiI2YWY1N2E1Y2Y0NzI4OWRkNjc4ODA0M2EyY2M3ZDkwZCIsInN1YiI6IjYyOTQzODY0NGJmYTU0MDA1MTMzZTZjYiIsInNjb3BlcyI6WyJhcGlfcmVhZCJdLCJ2ZXJzaW9uIjoxfQ.DRyVzMXKlvWBpV261UKAteknpSC8FImP_rKbRspnv_E'
+      Authorization: `Bearer ${process.env.TOKEN}`
     }
   };
   if(onlyKidFriendly){
